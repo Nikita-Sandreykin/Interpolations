@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{961044C0-7364-4D5C-A72D-C501C4879B8F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Num_meth_3</RootNamespace>
+    <AssemblyName>Num_meth_3</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.5.28844, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cubic_spline.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionsApp.cs" />
+    <Compile Include="linear_spline.cs" />
+    <Compile Include="parabolic_spline.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Абсолютные погреншости Полиномов.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Абсолютные погреншости Полиномов.Designer.cs">
+      <DependentUpon>Абсолютные погреншости Полиномов.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Абсолютные погрешности Лагранжа.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Абсолютные погрешности Лагранжа.Designer.cs">
+      <DependentUpon>Абсолютные погрешности Лагранжа.cs</DependentUpon>
+    </Compile>
+    <Compile Include="График полинома Лагранжа.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="График полинома Лагранжа.Designer.cs">
+      <DependentUpon>График полинома Лагранжа.cs</DependentUpon>
+    </Compile>
+    <Compile Include="График полинома Ньютона.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="График полинома Ньютона.Designer.cs">
+      <DependentUpon>График полинома Ньютона.cs</DependentUpon>
+    </Compile>
+    <Compile Include="График Функции.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="График Функции.Designer.cs">
+      <DependentUpon>График Функции.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Интерполяции.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Интерполяции.Designer.cs">
+      <DependentUpon>Интерполяции.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ошибка сплайнов.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ошибка сплайнов.Designer.cs">
+      <DependentUpon>Ошибка сплайнов.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Сплайны.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Сплайны.Designer.cs">
+      <DependentUpon>Сплайны.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Абсолютные погреншости Полиномов.resx">
+      <DependentUpon>Абсолютные погреншости Полиномов.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Абсолютные погрешности Лагранжа.resx">
+      <DependentUpon>Абсолютные погрешности Лагранжа.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="График полинома Лагранжа.resx">
+      <DependentUpon>График полинома Лагранжа.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="График полинома Ньютона.resx">
+      <DependentUpon>График полинома Ньютона.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="График Функции.resx">
+      <DependentUpon>График Функции.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Интерполяции.resx">
+      <DependentUpon>Интерполяции.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ошибка сплайнов.resx">
+      <DependentUpon>Ошибка сплайнов.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Сплайны.resx">
+      <DependentUpon>Сплайны.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
